@@ -8,12 +8,12 @@ const User = require('../backend/server/models/userModel')
 const routes = require('../backend/server/routes/route');
 
 require("dotenv").config({
- path: path.join(__dirname, "../.env")
+ path: path.join(__dirname, "./.env")
 });
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 
 mongoose
  .connect('mongodb://localhost:27017/rbac')
